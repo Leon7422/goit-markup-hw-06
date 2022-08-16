@@ -16,6 +16,7 @@
     <title>Студия</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -52,6 +53,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <!-- Hero -->
       <section class="section hero">
@@ -355,6 +357,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-contatiner">
         <div class="footer-logoadress">
@@ -405,13 +408,87 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-mailing">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+
+          <form class="footer-form">
+            <input class="input-footer" type="email" name="email" placeholder="E-mail" />
+            <button class="submit-button" type="submit">
+              <span>Підписатися </span>
+              <svg class="icon-footer-form">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Backdrope -->
     <div class="backdrope is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
           <svg class="close-icon"><use href="./images/icons.svg#icon-close-button"></use></svg>
         </button>
+        <form>
+          <div class="form-thumb" role="group" arial-labelby="contact-details-modal">
+            <p class="text-modal" id="contact-details-modal">
+              Залиште свої дані, ми вам передзвонимо
+            </p>
+            <label class="modal-data username">
+              <span class="modal-input-description">Ім'я</span>
+              <div class="input-thumb">
+                <input class="modal-input" type="text" name="username" />
+                <svg class="icon-modal">
+                  <use href="./images/icons.svg#icon-person-modal"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-data">
+              <span class="modal-input-description">Телефон</span>
+              <div class="input-thumb">
+                <input class="modal-input" type="tel" name="phone-number" />
+                <svg class="icon-modal">
+                  <use href="./images/icons.svg#icon-phone-modal"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-data">
+              <span class="modal-input-description">Пошта</span>
+              <div class="input-thumb">
+                <input class="modal-input" type="email" name="email" />
+                <svg class="icon-modal">
+                  <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-data">
+              <span class="modal-input-description comment">Коментар</span>
+              <textarea
+                class="textarea"
+                name="textarea"
+                rows="8"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+            <label class="modal-data custom-checkbox">
+              <div class="custom-checkbox-thumb">
+                <input class="agreement" type="checkbox" name="agree" />
+                <svg class="icon-vector">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+                <svg class="icon-check">
+                  <use href="./images/icons.svg#icon-icon-check"></use>
+                </svg>
+              </div>
+              <span class="modal-input-description">
+                Погоджуюся з розсилкою та приймаю <a class="сontract" href="">Умови договору</a>
+              </span>
+            </label>
+            <button class="submit-button submit-button-modal" type="submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
